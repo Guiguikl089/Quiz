@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+canvas {
+    background-color: #000;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Botões da tela inicial (Começar, Créditos, Recorde) */
+.start-buttons button {
+    width: 500px;
+    height: 100px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Botões de controle da minhoca */
+.control-buttons {
+    position: absolute;
+    top: 20px; /* Ajusta para que todos fiquem no topo */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Mantém a estrutura vertical */
+    align-items: center;
+    gap: 10px;
+}
+
+/* Define a organização correta dos botões de direção */
+.direction-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Ajusta os botões menores para controle da minhoca */
+.control-buttons button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#startScreen {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Ajusta a cor do título e textos */
+h1 {
+    color: white;
+}
+
+#creditsText,
+#recordText {
+    color: white;
+}
